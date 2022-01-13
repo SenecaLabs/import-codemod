@@ -21,7 +21,7 @@ export default function (file, api, options) {
   const findImport = name =>
     root.find(j.ImportDeclaration, {
       source: {
-        type: 'Literal',
+        type: 'StringLiteral',
         value: name,
       },
     });
